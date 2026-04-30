@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "TechNova Solutions",
+    "industry": "IT Services",
+    "location": "Hyderabad",
+    "employees": 540,
+    "founded": 2015,
+    "website": "https://example.com"
+  },
+  {
+    "id": 2,
+    "name": "FinEdge Capital",
+    "industry": "Finance",
+    "location": "Bangalore",
+    "employees": 310,
+    "founded": 2017,
+    "website": "https://example.com"
+  },
+  {
+    "id": 3,
+    "name": "HealthBridge",
+    "industry": "Healthcare",
+    "location": "Chennai",
+    "employees": 220,
+    "founded": 2012,
+    "website": "https://example.com"
+  },
+  {
+    "id": 4,
+    "name": "EduSpark Labs",
+    "industry": "Education",
+    "location": "Pune",
+    "employees": 140,
+    "founded": 2020,
+    "website": "https://example.com"
+  },
+  {
+    "id": 5,
+    "name": "CloudPeak Systems",
+    "industry": "IT Services",
+    "location": "Mumbai",
+    "employees": 720,
+    "founded": 2010,
+    "website": "https://example.com"
+  },
+  {
+    "id": 6,
+    "name": "RetailNest",
+    "industry": "Retail",
+    "location": "Delhi",
+    "employees": 430,
+    "founded": 2016,
+    "website": "https://example.com"
+  },
+  {
+    "id": 7,
+    "name": "AgriWave",
+    "industry": "Agriculture",
+    "location": "Coimbatore",
+    "employees": 180,
+    "founded": 2019,
+    "website": "https://example.com"
+  },
+  {
+    "id": 8,
+    "name": "LogiMove",
+    "industry": "Logistics",
+    "location": "Noida",
+    "employees": 390,
+    "founded": 2014,
+    "website": "https://example.com"
+  },
+  {
+    "id": 9,
+    "name": "SecureGrid",
+    "industry": "Cybersecurity",
+    "location": "Hyderabad",
+    "employees": 260,
+    "founded": 2018,
+    "website": "https://example.com"
+  },
+  {
+    "id": 10,
+    "name": "MediaMint",
+    "industry": "Marketing",
+    "location": "Bangalore",
+    "employees": 150,
+    "founded": 2021,
+    "website": "https://example.com"
+  }
+]
