@@ -1,16 +1,71 @@
-# React + Vite
+# Companies Directory
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive frontend application built as a technical assessment for the Frontend Developer role.  
+The application displays company data with powerful search, filtering, sorting, pagination, and multiple view options.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 https://companies-directory-pink.vercel.app/
 
-## React Compiler
+## GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 https://github.com/bavannarayana/companies-directory
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- Responsive UI for mobile, tablet, and desktop
+- View companies in **Grid** and **Table** layouts
+- Search companies by name
+- Filter by location
+- Filter by industry
+- Sort companies by:
+  - Name (A-Z)
+  - Employees (High to Low)
+- Pagination support
+- Reset filters
+- Loading skeleton state
+- Error handling with retry option
+- Empty state when no results found
+- Clean and reusable component architecture
+
+---
+
+## Tech Stack
+
+- React
+- Vite
+- Tailwind CSS
+- JavaScript (ES6+)
+- React Hooks
+
+---
+
+## Folder Structure
+
+```txt
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── Stats.jsx
+│   ├── SearchBar.jsx
+│   ├── Filters.jsx
+│   ├── ViewToggle.jsx
+│   ├── CompanyCard.jsx
+│   ├── CompanyTable.jsx
+│   ├── Pagination.jsx
+│   ├── Loader.jsx
+│   └── EmptyState.jsx
+│
+├── hooks/
+│   ├── useCompanies.js
+│   ├── useDebounce.js
+│   └── useFilteredCompanies.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+
+public/
+└── companies.json
