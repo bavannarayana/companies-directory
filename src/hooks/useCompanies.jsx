@@ -7,18 +7,17 @@ export default function useCompanies() {
 
   const fetchCompanies = async () => {
     try {
-      setLoading(true);
       setError("");
 
       const res = await fetch("/companies.json");
 
       if (!res.ok) {
-        throw new Error("Failed to fetch");
+        throw new Error();
       }
 
       const data = await res.json();
       setCompanies(data);
-    } catch (err) {
+    } catch {
       setError("Unable to load companies.");
     } finally {
       setLoading(false);
@@ -26,13 +25,46 @@ export default function useCompanies() {
   };
 
   useEffect(() => {
-    fetchCompanies();
+    let ignore = false;
+
+    const loadData = async () => {
+      try {
+        const res = await fetch("/companies.json");
+
+        if (!res.ok) {
+          throw new Error();
+        }
+
+        const data = await res.json();
+
+        if (!ignore) {
+          setCompanies(data);
+        }
+      } catch {
+        if (!ignore) {
+          setError("Unable to load companies.");
+        }
+      } finally {
+        if (!ignore) {
+          setLoading(false);
+        }
+      }
+    };
+
+    loadData();
+
+    return () => {
+      ignore = true;
+    };
   }, []);
 
   return {
     companies,
     loading,
     error,
-    refetch: fetchCompanies,
+    refetch: () => {
+      setLoading(true);
+      fetchCompanies();
+    },
   };
 }
